@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="index.css" rel="stylesheet">
+    <script defer src="App.js"></script>    
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+      <div class="maincontainer">
+        <div id="questions" style="display:none">
+          <form name="quiz" method="POST" data-netlify="true" onSubmit="submit">
+          <input type="hidden" name="quiz-survey" value="quiz"/>
+          <div>
+            <label>Nickname<br/>
+              <input type="text" placeholder="Enter your nickname!" name="nickname" required/>
+            </label>
+          </div>
+
+            <div>
+              <label>Age<br/>
+                <input type="number" min="1"  placeholder="Enter your age" name="age" required/>
+              </label>
+            </div>
+
+            <div>
+              <label>Hobby<br/>
+                <input type="text" placeholder="Enter your hobby" name="hobby" required/>
+              </label>
+            </div>
+
+            <div>
+              <label><h1>Question 1</h1><br/>
+                What is your favourite subject in school? <br/>
+                <input type="checkbox" name="myCB">
+                  <label>Science</label><br>
+                <input type="checkbox" name="myCB">
+                  <label>Mathematics</label><br>
+                <input type="checkbox" name="myCB">
+                  <label>Language</label><br>
+                <input type="checkbox" name="myCB">
+                  <label>Arts</label><br>
+              </label>
+            </div>
+
+            <div>
+              <label><h1>Question 2</h1>
+                Out of these 2, which 1 will you pick?<br/>
+                <input type="checkbox" name="myCB">
+                  <img src="./download.jpg" width="150" height="150">
+                <input type="checkbox" name="myCB">
+                  <img src="./ikan.jpg" width="150" height="150">
+              </label>
+            </div>
+            
+            <div>
+              <label><h1>Comment</h1><br/>
+                Leave us a comment (less than 30 words)<br/>
+                <textarea  name='comments' placeholder="Add your comment"></textarea>
+              </label>
+            </div>
+
+            <button type="submit">Submit Answers</button>
+
+          </form>
+        </div>
+        <div class="control">
+          <button id="start" name="start" onclick="showDiv()">Start</button>
+          <script>
+            function showDiv () {
+              document.getElementById('questions').style.display = "block";
+            }
+          
+          </script>
+        </div>
+      </div>  
+    
+    
+  </body>
+</html>

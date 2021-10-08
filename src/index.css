@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  border-width: thick;
+}
+
+.maincontainer{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: linear-gradient(to bottom, #3399ff 0%, #66ffff 100%);
+}
+
+.control{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+#start{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color:burlywood;
+  outline: none;
+}
+
+#start:hover{
+  border-color: rgba(0, 255, 21, 0.342);
+}
+
+textarea{
+  height: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  background-color: transparent;
+  margin-bottom: 10px;
+  resize: none;
+  outline:none;  
+  transition: .5s;
+}
+
+#comment {
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  border: 2px solid #333;
+  padding: 15px 10px;
+  display: flex;
+}
+
+.comment h1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
